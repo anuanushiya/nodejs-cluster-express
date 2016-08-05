@@ -6,7 +6,7 @@ module.exports = function(worker){
   app         = express();
 
   app.get('/', function(req, res){
-    res.end('Hello from worker world #'+worker.id);
+    res.end('Hello from worker #'+worker.id);
   });
 
   app.get('/event', function(req, res){
