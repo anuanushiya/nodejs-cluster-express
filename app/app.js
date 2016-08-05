@@ -10,7 +10,7 @@ module.exports = function(worker){
   });
 
   app.get('/event', function(req, res){
-    worker.send({ hello: 'Worker' });
+    worker.send({ hello: 'Worker world welcome' });
     res.end('Sending event to master cluster...');
   });
 
